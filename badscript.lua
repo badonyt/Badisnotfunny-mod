@@ -1,7 +1,7 @@
 local OwnerSteamID = "STEAM_0:1:564501531"
 util.AddNetworkString("noclipallowstrue")
 util.AddNetworkString("noclipallowsfalse")
-AddCSLuaFile("badscriptcs.lua")
+-- AddCSLuaFile("badscriptcl.lua")
 local noclipallow = false
 hook.Add("PlayerNoClip", "isInNoClip", function(ply, desiredState)
     if ply:SteamID() == OwnerSteamID or ply:IsAdmin() == true then return end
@@ -50,5 +50,10 @@ hook.Add("PlayerSay", "UnquieName", function(ply, mes)
 
 
 end)
+
+hook.Add( "VehicleMove", "Remove veickle", function( ply, vehicle, mv )
+	vehicle:Remove()
+    ply:Say("I forgot my drivers license")
+end )
 
 -- https://wiki.facepunch.com/gmod/Global.DrawMotionBlur 

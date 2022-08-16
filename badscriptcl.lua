@@ -1,4 +1,4 @@
-include("badscript.lua")
+-- include("badscript.lua")
 local sizes = 25
 local message = "No clip is deactivavated"
 
