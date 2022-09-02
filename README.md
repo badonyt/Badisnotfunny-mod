@@ -11,6 +11,6 @@ Go to your steam library where garrymod is located.
 
 SteamLibrary\steamapps\common\GarrysMod\garrysmod\lua\autorun
 
-and put badscript.lua in GarrysMod\garrysmod\lua\autorun\server
+and put Badisnotfunny.lua in GarrysMod\garrysmod\lua\autorun\server
 
-and then badscriptcl.lua in GarrysMod\garrysmod\lua\autorun\client
+and then Badisnotfunnycl.lua in GarrysMod\garrysmod\lua\autorun\client
